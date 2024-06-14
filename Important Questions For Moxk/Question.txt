@@ -1,0 +1,13 @@
+1. What is Javascript? Explain 6 Points?
+2. What is JRE and JS Engine? Write the names of different js Engines?
+3. What is Tokens? Explain Primitive and Non-Primitive Literals?
+4. What is Type Coercion and Explain its types?
+5. What is GEC, Variable Phase and Execution Phase?
+6. Difference Between Var,let and Const?
+7. What is Hoisting and Temporal Dead Zone?
+8. What is Function Explain its type?
+9. What is Arrow Function explain implicit and Explicit return in arrow function?
+10. What is First Class Function and Annonymous Function?
+11. What is Functional Programming? What is Higher Order Function and Call Back Function?
+12. What is Closure and Lexical Scoping?
+13. Practical Question?
