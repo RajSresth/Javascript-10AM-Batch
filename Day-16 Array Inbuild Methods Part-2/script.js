@@ -101,19 +101,19 @@
 // console.log(arr)
 
 
-let arr=[1,2,3,4,5]
-output=[1,4,9,16,25]
+// let arr=[1,2,3,4,5]
+// output=[1,4,9,16,25]
 
-const result=arr.map((val,index,array)=>val*10)
-console.log(arr)
-console.log(result)
+// const result=arr.map((val,index,array)=>val*10)
+// console.log(arr)
+// console.log(result)
     
-let arr=[1,2,3,4,5]
-output=[11,12,13,14,15]
+// let arr=[1,2,3,4,5]
+// output=[11,12,13,14,15]
 
 
-let marks=[100,90,80,70,60]
-let output=[50,45,40,35,30]
+// let marks=[100,90,80,70,60]
+// let output=[50,45,40,35,30]
 
 // write a js program to create a function which accepts an array and flat them into single array?
 let array=[1,[2,3],[4,[5,6],7],[8,9],10]
