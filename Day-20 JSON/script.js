@@ -144,3 +144,23 @@ const shoppingCart=[
         color:'Multi Color'
     }    
 ]
+
+// Reduce
+// const total=shoppingCart.reduce((acc,val)=>{
+//     acc=acc+val.price
+//     return acc
+// },0)
+
+// console.log('Total Price is: '+total+'/-Rs')
+
+
+// Filter
+const expensiveItems=[]
+shoppingCart.filter(val=>{
+    if(val.price>1000)
+     {
+            expensiveItems.push(val.itemName);
+     }
+})
+    
+console.log(expensiveItems)
