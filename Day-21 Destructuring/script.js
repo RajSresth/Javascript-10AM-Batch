@@ -125,17 +125,103 @@ provideJob(users)*/
 
 // Topic: Destructuring of Object in a function
 
-const user={
-    userName:'Chombu',
-    age:24,
-    city:'Noida',
-    isWorking:false
-}
+// const user={
+//     userName:'Chombu',
+//     age:24,
+//     city:'Noida',
+//     isWorking:false
+// }
 
-function provideJob({userName,age,city,isWorking}){
-    console.log(`User Name is ${userName}`)
-    console.log(`Age is ${age}`)
-    console.log(`City: ${city}`)
-    console.log(`Working status: ${isWorking}`)
-}
-provideJob(user)
+// function provideJob({userName,age,city,isWorking}){
+//     console.log(`User Name is ${userName}`)
+//     console.log(`Age is ${age}`)
+//     console.log(`City: ${city}`)
+//     console.log(`Working status: ${isWorking}`)
+// }
+// provideJob(user)
+
+
+// const movie={
+//     name:'Kalki',
+//     actor:['Amitabh Bachan','Prabhas','Kamal Hasan','Vijar Devrakonda','Dulqar salman'],
+//     actress:['Deepika Padukon','Mrunal Thakur'],
+//     price:350,
+//     type:['action','thriller','superficial','comedy','hindu mythology']
+// }
+
+//  const app=({name,actor,actress,price,type})=>{
+//     console.log(name)
+//    const [a,b,c,d,e]=actor
+//     console.log(a,b,c,d,e)
+//     console.log(price)
+// }
+
+// app(movie)
+
+
+// Topic: Destructing Advaced
+const courses=[
+    {
+        name:'Java Fullstack',
+        price:35000,
+        duration:'5-Months',
+        skills:['sql','java','web','adv java','python','mongoDb']
+    },
+    {
+        name:'Mern Stack',
+        price:35000,
+        duration:'4-Months',
+        skills:['web','node','express','mongoDb']
+    },
+    {
+        name:'Python Fullstack',
+        price:35000,
+        duration:'5-Months',
+        skills:['sql','python','web','Django','mongoDb']
+    },
+    {
+        name:'Android Developement',
+        price:50000,
+        duration:'6-Month',
+        skills:['Java','Kotlin','Native Script','Flutter','React Native']
+    }
+]
+
+// console.log(result) //{name:'Android Developement'}
+
+/* courses.map(({name,price,duration,skills})=>{
+      skills.filter(val=>{
+        if(val==='python')
+            {
+                console.log(name)
+            }
+      })
+ })
+ */
+
+
+/* const result=[]
+ courses.map(({name,price})=>{
+    if(price>=50000){
+            result.push(
+                {name}
+            )
+    }
+ })
+
+ console.log(result) */
+
+
+const result=courses.reduce((acc,val,index)=>{
+    const {name,price}=val;
+    if(price>=30000)
+    {
+     acc[`name${index}`]=name; 
+    }
+    return acc
+},{})
+
+console.log(result)
+
+
+ 
