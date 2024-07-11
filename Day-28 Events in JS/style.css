@@ -10,10 +10,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    justify-content:center;
 }
-button{
+/* button{
     padding: 15px 75px;
     background-color: rgb(5, 153, 217);
     color: white;
@@ -21,10 +20,33 @@ button{
     border-radius: 7px;
     font-size: 24px;
     cursor: pointer;
-}
+} */
 
-input{
-    
-    padding: 10px 45px 10px 10px;
-    font-size: 16px;
+form{
+    width: 350px;
+    height: 450px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
+form input,button{
+    width: 100%;
+    font-size: 24px;
+    padding: 15px 45px;    
+    outline: none;
+    border: none;
+}
+button{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+input{
+    border-bottom: 3px solid black !important;   
+    color: black; 
+}
+/* input[type="text"]::-webkit-placeholder{
+    color: black !important;
+} */

@@ -1,28 +1,17 @@
 const form=document.querySelector('form')
 
-function checkPrime(num){
-    let count=0;
-
-    for(let i=2;i<=Math.floor(num/2);i++)
-    {
-        if(num%i===0)
-        {
-            count++
-        }
+const findPower=(a,b)=>{
+    let pow=1;
+    for(let i=1;i<=b;i++){
+        pow=pow*a;
     }
-    if(count===0)
-    {
-        return `${num} is Prime Number`
-    }
-    else{
-        return `${num} is not a Prime Number`
-    }
+    return pow
 }
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    const input=document.getElementById('input').value
-    const heading=document.querySelector('h1')
-    heading.textContent=`Result: ${checkPrime(input)}`
-    
+    const base=document.getElementById('base').value
+    const expo=document.getElementById('exponent').value
+    const span=document.querySelector('span')
+    span.textContent=`${findPower(base,expo)}`
 })
