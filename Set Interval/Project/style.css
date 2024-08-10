@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;    
+}
+section{
+    width: 700px;
+    height: 400px;
+    border: 3px solid black;
+    position: relative;  
+}
+section .top{
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: flex-end;    
+    padding:2px;
+}
+section #displayColor{
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.btn-container{
+    display: flex;
+    gap: 2rem;
+}
+button{
+    padding: 15px 65px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button#start{
+    background-color: rgb(24, 143, 216);
+    color: white;
+    font-weight: bold;
+}
+button#stop{
+    background-color: rgb(168, 8, 8);
+    color: white;
+    font-weight: bold;
+}
+button#clear{
+    background-color:black;
+    color: white;
+    font-weight: bold;
+}
+
+section #colorCode{
+    padding: 13.5px 15px 13.5px 50px; 
+    width: 250px;  
+    outline: none;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(196, 237, 250);
+    font-size: 22px;
+}
+section #copy{
+    padding: 8px 45px;   
+    color: white;
+    background-color: black;
+    border-radius:0px 10px 10px 0px;
+}
+
