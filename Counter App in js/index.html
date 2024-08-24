@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <!-- Tailwind CSS:- PLAY CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white w-full h-screen flex justify-center items-center">
+    <div class="app w-[400px] h-[fit-content] border-white border-[2px] rounded-2xl flex flex-col justify-center gap-5 pb-12 pt-5">
+        <h2 class="text-[3.75rem] text-center">Count: <span></span></h2>
+        <div class="button-container flex flex-col px-10 gap-5">
+
+            <button id="incr" class="w-[100%] bg-blue-500 py-4 text-[1.5rem] font-semibold rounded-xl">Increment</button>
+            
+            <button id="decr" class="w-[100%] bg-red-500 py-4 text-[1.5rem] font-semibold rounded-xl">Decrement</button>
+
+            <button id="reset" class="w-[100%] bg-emerald-500 py-4 text-[1.5rem] font-semibold rounded-xl">Reset</button>
+        </div>
+    </div>
+
+    <script src="counterApp.js"></script>
+</body>
+</html>
+
