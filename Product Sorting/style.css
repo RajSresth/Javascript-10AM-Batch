@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    padding:0px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+button{
+    padding:10px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    scale: 1;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+#fetch{
+    background-color: #08aea3;   
+}
+#high{
+    background-color: rgb(8, 146, 181);
+}
+#low{
+    background-color: rgb(163, 9, 9);
+}
+button:hover{
+    scale: 1.125;
+}
+
+.container{
+    width: 100%;
+    height: fit-content;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem 3rem;
+}
+.card{
+    width: 280px;
+    height: 310px;
+    box-shadow: 0px 0px 12px rgb(151, 150, 150);
+    text-align: center;
+    padding: 15px 0px;
+}
+.card .profile{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 15px;
+}
+.card .profile img{
+    width: 70%;
+    height: 100%;
+}
+p{
+    font-size: 20px;    
+    margin-block: 10px;
+}

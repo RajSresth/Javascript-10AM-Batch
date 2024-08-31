@@ -17,7 +17,7 @@ fun().then(function(result){
                     <h2 id="userId">User ID: ${v.id}</h2>        
                     <h2 id="name">User Name: ${v.login}</h2>
                 </div>`
-              cardsContainer.innerHTML=cards          
-        }
+            }
+        })
+        cardsContainer.innerHTML=cards          
     })
-})
